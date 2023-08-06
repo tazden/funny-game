@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlippyFlop</string>
+    <string name="flippy_flop">Flippy Flop</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="game_over">Game over</string>
+    <string name="score">Score</string>
+</resources>

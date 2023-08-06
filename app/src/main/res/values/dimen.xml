@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="play_button_size">150dp</dimen>
+    <dimen name="simple_padding">20dp</dimen>
+    <dimen name="outline">6dp</dimen>
+    <dimen name="character">100dp</dimen>
+    <dimen name="obstacle">800dp</dimen>
+    <dimen name="end_card">400dp</dimen>
+</resources>
