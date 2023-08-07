@@ -23,10 +23,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.flappies.flippyflop.R
 import com.flappies.flippyflop.ui.Destinations
@@ -44,7 +46,7 @@ fun End(
             .background(Transparent)
     ) {
         Column(
-            verticalArrangement = Arrangement.SpaceBetween,
+            verticalArrangement = Arrangement.Center,
             modifier = Modifier
                 .padding(dimensionResource(R.dimen.simple_padding))
                 .size(dimensionResource(R.dimen.end_card))
@@ -66,17 +68,19 @@ fun End(
                     contentDescription = null,
                     modifier = Modifier
                         .size(dimensionResource(R.dimen.character) * 1.5f)
+                        .graphicsLayer { translationX = -12.dp.toPx() }
                 )
+                Spacer(Modifier.width(dimensionResource(R.dimen.simple_padding)))
                 Column {
                     Text(
-                        text = stringResource(R.string.score) + "   " + viewModel.score,
+                        text = stringResource(R.string.score) + " " + viewModel.score,
                         style = MaterialTheme.typography.bodySmall
                     )
                     val configuration = LocalConfiguration.current
                     Row {
                         Button(
                             onClick = {
-                                navController.navigate(Destinations.Game.name)
+                                navController.popBackStack(Destinations.Game.name, false)
                                 viewModel.changeGameState()
                                 viewModel.clearScore()
                                 viewModel.setObstacleStartPosition(configuration)
@@ -91,10 +95,10 @@ fun End(
                                 Modifier.size(dimensionResource(R.dimen.simple_padding) * 1.5f)
                             )
                         }
-                        Spacer(modifier = Modifier.width(dimensionResource(R.dimen.simple_padding)))
+                        Spacer(modifier = Modifier.width(dimensionResource(R.dimen.simple_padding) / 2))
                         Button(
                             onClick = {
-                                navController.navigate(Destinations.Menu.name)
+                                navController.popBackStack(Destinations.Menu.name, false)
                                 viewModel.clearScore()
                             }
                         ) {

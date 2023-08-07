@@ -37,6 +37,7 @@ class FlippyFlopViewModel: ViewModel() {
     var score = -1
 
     var backgroundNull = false
+    var clicked = false
 
     fun startPhysics(action: () -> Unit) {
         viewModelScope.launch {
@@ -53,18 +54,20 @@ class FlippyFlopViewModel: ViewModel() {
 
             uiState.update {
                 it.copy(
-                    characterFallingTime = uiState.value.characterFallingTime + 1 / physicsAccuracy,
+                    characterFallingTime = if (clicked) 0.05f else uiState.value.characterFallingTime + 1 / physicsAccuracy,
                     characterCoordinateY = uiState.value.characterCoordinateStartY -
                             startVelocity * uiState.value.characterFallingTime +
                                 acceleration / 2 * uiState.value.characterFallingTime.pow(2),
                     characterVelocity = -startVelocity + acceleration * uiState.value.characterFallingTime,
-                    characterRotationZ = uiState.value.characterRotationZ + angularVelocity,
-                    backgroundOffset = if (backgroundNull) 0 else uiState.value.backgroundOffset - 1
+                    characterRotationZ = if (clicked) 0f else uiState.value.characterRotationZ + angularVelocity,
+                    backgroundOffset = if (backgroundNull) 0 else uiState.value.backgroundOffset - 1,
+                    characterCoordinateStartY = if (clicked) uiState.value.characterCoordinateY else uiState.value.characterCoordinateStartY
                 )
             }
 
             if (gameContinues) {
                 backgroundNull = false
+                clicked = false
                 startPhysics(action)
             }
         }
@@ -75,13 +78,7 @@ class FlippyFlopViewModel: ViewModel() {
     }
 
     fun click() {
-        uiState.update {
-            it.copy(
-                characterRotationZ = 0f,
-                characterFallingTime = 0.05f,
-                characterCoordinateStartY = uiState.value.characterCoordinateY
-            )
-        }
+        clicked = true
     }
 
     fun clearScore() {

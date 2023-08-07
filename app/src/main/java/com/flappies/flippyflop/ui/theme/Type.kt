@@ -5,6 +5,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.flappies.flippyflop.R
 
@@ -20,7 +21,8 @@ val Typography = Typography(
         fontSize = 60.sp,
         lineHeight = 60.sp,
         letterSpacing = 0.5.sp,
-        color = SoftRed
+        color = SoftRed,
+        textAlign = TextAlign.Center
     ),
     bodySmall = TextStyle(
         fontFamily = FontFamily.Default,
