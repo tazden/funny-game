@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui.screens
+package dadf.qwerfw.vvdvr.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,10 +30,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.flappies.flippyflop.R
-import com.flappies.flippyflop.ui.Destinations
-import com.flappies.flippyflop.ui.theme.FlippyFlopViewModel
-import com.flappies.flippyflop.ui.theme.Transparent
+import dadf.qwerfw.vvdvr.R
+import dadf.qwerfw.vvdvr.ui.Destinations
+import dadf.qwerfw.vvdvr.ui.theme.FlippyFlopViewModel
+import dadf.qwerfw.vvdvr.ui.theme.Transparent
 
 @Composable
 fun End(

@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui
+package dadf.qwerfw.vvdvr.ui
 
 data class FlippyFlopUiState (
     val characterCoordinateStartY: Float = 0f,

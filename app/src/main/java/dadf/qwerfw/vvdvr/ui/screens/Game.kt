@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui.screens
+package dadf.qwerfw.vvdvr.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -25,9 +25,9 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.flappies.flippyflop.R
-import com.flappies.flippyflop.ui.FlippyFlopUiState
-import com.flappies.flippyflop.ui.theme.FlippyFlopViewModel
+import dadf.qwerfw.vvdvr.R
+import dadf.qwerfw.vvdvr.ui.FlippyFlopUiState
+import dadf.qwerfw.vvdvr.ui.theme.FlippyFlopViewModel
 
 @Composable
 fun Game(

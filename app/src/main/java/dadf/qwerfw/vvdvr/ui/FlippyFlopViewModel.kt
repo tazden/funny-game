@@ -1,10 +1,10 @@
-package com.flappies.flippyflop.ui.theme
+package dadf.qwerfw.vvdvr.ui.theme
 
 import android.content.res.Configuration
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.flappies.flippyflop.R
-import com.flappies.flippyflop.ui.FlippyFlopUiState
+import dadf.qwerfw.vvdvr.R
+import dadf.qwerfw.vvdvr.ui.FlippyFlopUiState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update

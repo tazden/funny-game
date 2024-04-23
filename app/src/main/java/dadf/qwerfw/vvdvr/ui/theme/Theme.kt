@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui.theme
+package dadf.qwerfw.vvdvr.ui.theme
 
 import android.app.Activity
 import android.os.Build

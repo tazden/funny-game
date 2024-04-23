@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui.theme
+package dadf.qwerfw.vvdvr.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes

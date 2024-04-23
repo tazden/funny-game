@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.flappies.flippyflop"
+    namespace = "dadf.qwerfw.vvdvr"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.flappies.flippyflop"
+        applicationId = "dadf.qwerfw.vvdvr"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

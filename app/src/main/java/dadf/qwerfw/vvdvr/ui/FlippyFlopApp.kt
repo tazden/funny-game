@@ -1,4 +1,4 @@
-package com.flappies.flippyflop.ui
+package dadf.qwerfw.vvdvr.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.wrapContentSize
@@ -11,11 +11,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.flappies.flippyflop.ui.screens.End
-import com.flappies.flippyflop.ui.screens.Game
-import com.flappies.flippyflop.ui.screens.Menu
-import com.flappies.flippyflop.ui.screens.MovableBackground
-import com.flappies.flippyflop.ui.theme.FlippyFlopViewModel
+import dadf.qwerfw.vvdvr.ui.screens.End
+import dadf.qwerfw.vvdvr.ui.screens.Game
+import dadf.qwerfw.vvdvr.ui.screens.Menu
+import dadf.qwerfw.vvdvr.ui.screens.MovableBackground
+import dadf.qwerfw.vvdvr.ui.theme.FlippyFlopViewModel
 
 enum class Destinations {
     Menu,

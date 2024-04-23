@@ -1,10 +1,10 @@
-package com.flappies.flippyflop
+package dadf.qwerfw.vvdvr
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.flappies.flippyflop.ui.FlippyFlopApp
-import com.flappies.flippyflop.ui.theme.FlippyFlopTheme
+import dadf.qwerfw.vvdvr.ui.FlippyFlopApp
+import dadf.qwerfw.vvdvr.ui.theme.FlippyFlopTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
