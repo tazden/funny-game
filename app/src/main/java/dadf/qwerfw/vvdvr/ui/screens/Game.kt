@@ -43,7 +43,7 @@ fun Game(
     ) {
         val density = LocalDensity.current
         Image(
-            painter = painterResource(if (uiState.characterVelocity > 0) R.drawable.flop1 else R.drawable.flop2),
+            painter = painterResource(if (uiState.characterVelocity > 0) R.drawable.ball else R.drawable.ball),
             contentDescription = null,
             modifier = Modifier
                 .size(dimensionResource(R.dimen.character))

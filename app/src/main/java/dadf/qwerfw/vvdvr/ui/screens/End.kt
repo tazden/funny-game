@@ -64,7 +64,7 @@ fun End(
             )
             Row {
                 Image(
-                    painter = painterResource(R.drawable.flop1),
+                    painter = painterResource(R.drawable.ball),
                     contentDescription = null,
                     modifier = Modifier
                         .size(dimensionResource(R.dimen.character) * 1.5f)
